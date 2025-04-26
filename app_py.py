@@ -113,8 +113,7 @@ if uploaded_file is not None:
 
     # ---------- RUN PREDICTION ----------
     img_expanded, original_array = preprocess_img_for_model(image)
-    input_name = model.input_names[0]
-    preds = model.predict({input_name: img_expanded})[0]
+    preds = model.predict(img_expanded)[0]
     predicted_class = np.argmax(preds)
     confidence = preds[predicted_class]
 
