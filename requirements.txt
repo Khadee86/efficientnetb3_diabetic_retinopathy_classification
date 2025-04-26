@@ -1,0 +1,10 @@
+# requirements.txt for Streamlit DR Classifier App
+streamlit
+tensorflow
+lime
+scikit-image
+opencv-python-headless
+matplotlib
+pillow
+numpy
+tf-keras-vis
