@@ -21,10 +21,10 @@ CLASS_NAMES = ['No DR', 'Mild', 'Moderate', 'Severe', 'Proliferative DR']
 
 # ---------- LOAD MODEL ----------
 @st.cache_resource
-def load_efficientnetb0():
+def load_efficientnetb3():
     return load_model(MODEL_PATH)
 
-model = load_efficientnetb0()
+model = load_efficientnetb3()
 
 # ---------- RETINA HEURISTIC CHECK ----------
 def is_likely_retinal_image(pil_img):
